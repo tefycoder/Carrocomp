@@ -62,6 +62,28 @@ directionsService.route(request, function(response, status) {
         //directionsDisplay.setPanel($("#panel_ruta").get(0));
         directionsDisplay.setDirections(response);
         console.log(response.routes[0].legs[0].distance.text)
+//valor del viaje
+        var km = response.routes[0].legs[0].distance.text;
+        var valor = parseInt(km.substring(0, km.indexOf(' ')));
+        
+        	console.log(km, valor)
+        $('.precioMoto').html('')
+        $('.precioMoto').html(parseInt(valor/21*673))
+        $('.precioAuto').html('')
+        $('.precioAuto').html(parseInt(valor/12*673))
+        $('.precioVan').html('')
+        $('.precioVan').html(parseInt(valor/7*673))
+        $('.precioCamion').html('')
+        $('.precioCamion').html(parseInt(valor/6*673))
+
+    } else {
+            console.log(response);
+    }
+});		
+	}
+});
+
+});
 
 
 

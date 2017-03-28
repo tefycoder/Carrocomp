@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body>   
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img src="docs/logo-gris.jpg" class="img-responsive" alt="">
+      </a>
+      <a href="#" data-toggle="tooltip" data-placement="right" class="info" title="La nueva forma de moverte en la ciudad. Con carrocomp! puedes compartir tu viaje con amigos y cobrar el costo equitativamente.">
+      <span class="glyphicon glyphicon-info-sign"></span>
+      </a>
+    </div>
+  </div>
+</nav><!--end-nav-->
+  <div class="col-xs-12 col-md-12" id='map-canvas'></div>
+<div class="container" id='container'>
+	<div class="row">
+		<div class="col-xs-8 col-md-4" id="ruta">
+			<div class="form-group input-box">
+      	<label for="origen">ORIGEN</label>
+      	<select class="form-control" id="origen">
+        	<option >Seleccione</option>
+        	<option >Arica</option>
+        	<option >Iquique</option>
+        	<option >Antofagasta</option>
+        	<option >Calama</option>
+        	<option >La Serena</option>
+        	<option >Valparaiso</option>
+        	<option >Santiago</option>
+        	<option > Rancagua</option>
+        	<option >Talca</option>
+        	<option >Concepción</option>
+        	<option ">Temuco</option>
+        	<option >Valdivia</option>
+        	<option >Puerto Montt</option>
+        	<option >Coyhaique</option>
+        	<option >Punta Arenas</option>
+      	</select>
+			</div>
+			<div>
+      	<label >DESTINO</label>
+      	<select>
+        	<option >Seleccione</option>
+        	<option >Arica</option>
+        	<option >Iquique</option>
+        	<option >Antofagasta</option>
+        	<option >Calama</option>
+        	<option >La Serena</option>
+        	<option >Valparaiso</option>
+        	<option >Santiago</option>
+        	<option >Rancagua</option>
+        	<option >Talca</option>
+        	<option >Concepción</option>
+        	<option >Temuco</option>
+        	<option >Valdivia</option>
+        	<option >Puerto Montt</option>
+        	<option >Coyhaique</option>
+        	<option >Punta Arenas</option>
+      	</select>
+			</div>
+	</div><!-- fin origen del destino-->
+</div>
+<div >
+	<div class="col-xs-8 col-md-4">
+		<button type="button" class="btn btn-warning btn-lg btn-block">buscar</button>
+	</div>
+</div>
+<div >
+	<div class="col-xs-8 col-md-4 hidden" id="carro">
+		<h4>VEHÍCULO</h4>
+		<h6>seleccione</h6>
+		<div class="radio">
+  			<label><input type="radio"></label>
+  			<img src="docs/moto.jpg" class="img-responsive auto" alt="">
+  			<h4>Moto</h4>
+        <div ></div>
+  			<span >máximo 2 pasajeros</span>
+		</div>
+		<div class="radio">
+  		<label><input type="radio" ></label>
+  			<img src="docs/auto.jpg" alt="">
+  			<h4>Automóvil</h4>
+        <div ></div>
+  			<span >máximo 5 pasajeros</span>
+		</div>
+		<div >
+  		<label><input type="radio" name="vehicle"></label>
+  			<img src="docs/van.jpg" alt="" class="img-responsive auto">
+  			<h4>Minivan</h4>
+        <div ></div>
+  			<span>máximo 10 pasajeros</span>
+		</div>
+		<div >
+  		<label><input type="radio"></label>
+  			<img src="docs/camion.jpg" alt="" class="img-responsive auto">
+  			<h4>Camión</h4>
+  			<div ></div>
+        <span >máximo 3 pasajeros</span> 
+		</div>
+			<h4 >Cantidad de pasajeros</h4>
+			<label><input type="number" ></label>
+      <span></span>
+	</div>
+</div>	
+<div >
+	<div class="col-xs-8 col-md-4">
+		<button type="button" class="btn btn-warning btn-lg btn-block hidden"  >compartir carro!</button>
+	</div>
+</div>
+
+</div><!--fin container con zindex-->
+
+<!---->
+<!--fdfdf
+<div>
+    <div>
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="dist/docs/logo-peach.jpg" alt="">
+          <img src="dist/docs/moto.jpg">
+          <h2>Costo por persona</h2>
+          <h1>$<span>2300</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDjhLZdzD1Knb8c128oNAJ8cwO6lqYieu8"></script>
+<script src="src/js/custom.js"></script>
+</html>

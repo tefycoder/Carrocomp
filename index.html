@@ -3,12 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Examen</title>
+	<title>Carrocomp</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/main.min.css">
 </head>
-
 <body>   
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -29,111 +28,110 @@
 			<div class="form-group input-box">
       	<label for="origen">ORIGEN</label>
       	<select class="form-control" id="origen">
-        	<option >Seleccione</option>
-        	<option >Arica</option>
-        	<option >Iquique</option>
-        	<option >Antofagasta</option>
-        	<option >Calama</option>
-        	<option >La Serena</option>
-        	<option >Valparaiso</option>
-        	<option >Santiago</option>
-        	<option > Rancagua</option>
-        	<option >Talca</option>
-        	<option >Concepción</option>
-        	<option ">Temuco</option>
-        	<option >Valdivia</option>
-        	<option >Puerto Montt</option>
-        	<option >Coyhaique</option>
-        	<option >Punta Arenas</option>
+        	<option value="">Seleccione</option>
+        	<option value="Arica">Arica</option>
+        	<option value="Iquique">Iquique</option>
+        	<option value="Antofagasta">Antofagasta</option>
+        	<option value="Calama">Calama</option>
+        	<option value="La Serena">La Serena</option>
+        	<option value="Valparaiso">Valparaiso</option>
+        	<option value="Santiago">Santiago</option>
+        	<option value="Rancagua"> Rancagua</option>
+        	<option value="Talca">Talca</option>
+        	<option value="Concepción">Concepción</option>
+        	<option value="Temuco">Temuco</option>
+        	<option value="Valdivia">Valdivia</option>
+        	<option value="Puerto Montt">Puerto Montt</option>
+        	<option value="Coyhaique">Coyhaique</option>
+        	<option value="Punta Arenas">Punta Arenas</option>
       	</select>
 			</div>
-			<div>
-      	<label >DESTINO</label>
-      	<select>
-        	<option >Seleccione</option>
-        	<option >Arica</option>
-        	<option >Iquique</option>
-        	<option >Antofagasta</option>
-        	<option >Calama</option>
-        	<option >La Serena</option>
-        	<option >Valparaiso</option>
-        	<option >Santiago</option>
-        	<option >Rancagua</option>
-        	<option >Talca</option>
-        	<option >Concepción</option>
-        	<option >Temuco</option>
-        	<option >Valdivia</option>
-        	<option >Puerto Montt</option>
-        	<option >Coyhaique</option>
-        	<option >Punta Arenas</option>
+			<div class="form-group input-box">
+      	<label for="destino">DESTINO</label>
+      	<select class="form-control" id="destino">
+        	<option value="">Seleccione</option>
+        	<option value="Arica">Arica</option>
+        	<option value="Iquique">Iquique</option>
+        	<option value="Antofagasta">Antofagasta</option>
+        	<option value="Calama"">Calama</option>
+        	<option value="La Serena">La Serena</option>
+        	<option value="Valparaiso">Valparaiso</option>
+        	<option value="Santiago">Santiago</option>
+        	<option value="Rancagua">Rancagua</option>
+        	<option value="Talca">Talca</option>
+        	<option value="Concepción">Concepción</option>
+        	<option value="Temuco">Temuco</option>
+        	<option value="Valdivia">Valdivia</option>
+        	<option value="Puerto Montt">Puerto Montt</option>
+        	<option value="Coyhaique">Coyhaique</option>
+        	<option value="Punta Arenas">Punta Arenas</option>
       	</select>
 			</div>
 	</div><!-- fin origen del destino-->
 </div>
-<div >
+<div class="row">
 	<div class="col-xs-8 col-md-4">
-		<button type="button" class="btn btn-warning btn-lg btn-block">buscar</button>
+		<button type="button" class="btn btn-warning btn-lg btn-block" id="search">buscar</button>
 	</div>
 </div>
-<div >
+<div class="row">
 	<div class="col-xs-8 col-md-4 hidden" id="carro">
 		<h4>VEHÍCULO</h4>
 		<h6>seleccione</h6>
 		<div class="radio">
-  			<label><input type="radio"></label>
+  			<label><input type="radio" name="vehicle" value="moto"></label>
   			<img src="docs/moto.jpg" class="img-responsive auto" alt="">
   			<h4>Moto</h4>
-        <div ></div>
-  			<span >máximo 2 pasajeros</span>
+        <div class="precioMoto"></div>
+  			<span class="llenar">máximo 2 pasajeros</span>
 		</div>
 		<div class="radio">
-  		<label><input type="radio" ></label>
-  			<img src="docs/auto.jpg" alt="">
+  		<label><input type="radio" name="vehicle" value="auto"></label>
+  			<img src="docs/auto.jpg" alt="" class="img-responsive auto">
   			<h4>Automóvil</h4>
-        <div ></div>
-  			<span >máximo 5 pasajeros</span>
+        <div class="precioAuto"></div>
+  			<span class="llenar">máximo 5 pasajeros</span>
 		</div>
-		<div >
-  		<label><input type="radio" name="vehicle"></label>
+		<div class="radio">
+  		<label><input type="radio" name="vehicle" value="minivan"></label>
   			<img src="docs/van.jpg" alt="" class="img-responsive auto">
   			<h4>Minivan</h4>
-        <div ></div>
-  			<span>máximo 10 pasajeros</span>
+        <div class="precioVan"></div>
+  			<span class="llenar">máximo 10 pasajeros</span>
 		</div>
-		<div >
-  		<label><input type="radio"></label>
+		<div class="radio">
+  		<label><input type="radio" name="vehicle" value="camion"></label>
   			<img src="docs/camion.jpg" alt="" class="img-responsive auto">
   			<h4>Camión</h4>
-  			<div ></div>
-        <span >máximo 3 pasajeros</span> 
+  			<div class="precioCamion"></div>
+        <span class="llenar">máximo 3 pasajeros</span> 
 		</div>
-			<h4 >Cantidad de pasajeros</h4>
-			<label><input type="number" ></label>
-      <span></span>
+			<h4 class="cantidad ">Cantidad de pasajeros</h4>
+			<label><input type="number" value="1" min="1" class="psj" id="psj"></label>
+      <span id="txt"></span>
 	</div>
 </div>	
-<div >
+<div class="row">
 	<div class="col-xs-8 col-md-4">
-		<button type="button" class="btn btn-warning btn-lg btn-block hidden"  >compartir carro!</button>
+		<button type="button" class="btn btn-warning btn-lg btn-block hidden"  data-toggle="modal" data-target="#modal" id="search2">compartir carro!</button>
 	</div>
 </div>
 
 </div><!--fin container con zindex-->
 
 <!---->
-<!--fdfdf
-<div>
-    <div>
+<div id="modal" class="modal fade hidden" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
           <img src="dist/docs/logo-peach.jpg" alt="">
           <img src="dist/docs/moto.jpg">
           <h2>Costo por persona</h2>
-          <h1>$<span>2300</span></h1>
+          <h1>$<span id="price">2300</span></h1>
         </div>
       </div>
     </div>
-  </div>-->
+  </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

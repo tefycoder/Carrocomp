@@ -21,7 +21,14 @@ function validarSelect(input){
 		mostrarMsj1(mensaje,input);
 		return bool
 };
-//
+//ruta del mapa 
+var request = {
+ origin: $('#origen').val(),
+ destination: $('#destino').val(),
+ travelMode: google.maps.DirectionsTravelMode.DRIVING,
+ unitSystem: google.maps.DirectionsUnitSystem.METRIC,
+ provideRouteAlternatives: true
+ };
 
 
 

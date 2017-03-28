@@ -230,7 +230,6 @@ function validarVan(input){
 	$(".radio").siblings().filter("span").remove();// NO FUNCIONA
 		mostrarMsj(mensaje, input);
 		return bool
-		hhf
 	};	
 function validarCamion(input){
 	var mensaje = "";

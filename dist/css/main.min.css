@@ -1,1 +1,27 @@
-#container,.navbar{z-index:100}.radio h4,.radio img{display:inline-block}#carro h4,.cantidad,.radio h4{font-weight:700}body{font-family:'PT Sans Narrow',sans-serif}.navbar{background-color:#fff;height:70px;border:none}.navbar-brand img{width:250px;position:absolute;top:10px}.glyphicon-info-sign{font-size:46px;color:#FFC36C}.info{width:200px;position:relative;left:285px;top:10px}#map-canvas{height:110%;position:absolute;top:70px;bottom:-300px;left:0;right:0;z-index:0}#container,.input-box,.radio img,.radio span{position:relative}#carro,#ruta{border:1px solid #FEFDF7;border-radius:7px;background-color:#FEFDF7;padding:15px;margin-top:-10px}#search,#search2{width:108%;margin-top:3px;margin-left:-15px}#carro{margin-top:3px;height:auto}#carro h4{margin-top:-7px}#carro h6,.radio{margin-top:-5px}#sel1,#sel2,.psj{border:1px solid #FFC36C}.radio{margin-bottom:-5px}.radio span{display:block;left:80px;top:-18px}.cantidad,.psj{display:inline-block}.auto{width:50px;height:50px}.cantidad{padding:5px}.psj{width:40px}.input-box span{display:block;background-color:rgba(51,51,51,.8);padding:5px;position:absolute;left:105%;top:25px;width:300px;color:#fff}.input-box span:after{content:"";width:0;height:0;border-top:5px solid transparent;border-right:10px solid rgba(51,51,51,.8);border-bottom:5px solid transparent;position:absolute;right:100%;top:10px}.precioAuto,.precioCamion,.precioMoto,.precioVan{font-size:18px;font-weight:700;color:#FFC36C;display:inline-block;margin-left:68px}.precioAuto{margin-left:20px}.precioCamion,.precioVan{margin-left:40px}
+#container,
+.navbar{z-index:100}
+.radio h4,
+.radio img{display:inline-block}
+#carro h4,.cantidad,
+.radio h4{font-weight:700}body{font-family:'PT Sans Narrow',sans-serif}
+.navbar{background-color:#fff;height:80px;border:none}
+.navbar-brand img{width:250px;position:absolute;top:10px}
+.glyphicon-info-sign{font-size:46px;color:#FFC36C}
+.info{width:200px;position:relative;left:285px;top:10px}
+#map-canvas{height:110%;position:absolute;top:70px;bottom:-300px;left:0;right:0;z-index:0}
+#container,
+.input-box,
+.radio img,
+.radio span{position:relative}
+#carro,
+#ruta{border:1px solid #f1a70a;border-radius:7px;background-color:#FEFDF7;padding:15px;margin-top:-10px}
+#search,#search2{width:108%;margin-top:3px;margin-left:-15px}
+#carro{margin-top:3px;height:auto}
+#carro h4{margin-top:-7px}
+#carro h6,
+.radio{margin-top:-5px}
+#sel1,#sel2,
+.psj{border:1px solid #FFC36C}
+.radio{margin-bottom:-5px}
+.radio span{display:block;left:80px;top:-18px}.cantidad,.psj{display:inline-block}.auto{width:50px;height:50px}.cantidad{padding:5px}.psj{width:40px}.input-box span{display:block;background-color:rgba(234, 186, 20, 0.8);padding:5px;position:absolute;left:105%;top:25px;width:300px;color:#fff}.input-box span:after{content:"";width:0;height:0;border-top:5px solid transparent;border-right:10px solid rgba(51,51,51,.8);border-bottom:5px solid transparent;position:absolute;right:100%;top:10px}.precioAuto,.precioCamion,.precioMoto,.precioVan{font-size:18px;font-weight:700;color:#FFC36C;display:inline-block;margin-left:68px}.precioAuto{margin-left:20px}.precioCamion,
+.precioVan{margin-left:40px}

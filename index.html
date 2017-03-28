@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Carrocomp</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Carrocomp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-	<link rel="stylesheet" href="dist/css/main.min.css">
+  <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
+
 <body>   
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -23,101 +24,100 @@
 </nav><!--end-nav-->
   <div class="col-xs-12 col-md-12" id='map-canvas'></div>
 <div class="container" id='container'>
-	<div class="row">
-		<div class="col-xs-8 col-md-4" id="ruta">
-			<div class="form-group input-box">
-      	<label for="origen">ORIGEN</label>
-      	<select class="form-control" id="origen">
-        	<option value="">Seleccione</option>
-        	<option value="Arica">Arica</option>
-        	<option value="Iquique">Iquique</option>
-        	<option value="Antofagasta">Antofagasta</option>
-        	<option value="Calama">Calama</option>
-        	<option value="La Serena">La Serena</option>
-        	<option value="Valparaiso">Valparaiso</option>
-        	<option value="Santiago">Santiago</option>
-        	<option value="Rancagua"> Rancagua</option>
-        	<option value="Talca">Talca</option>
-        	<option value="Concepción">Concepción</option>
-        	<option value="Temuco">Temuco</option>
-        	<option value="Valdivia">Valdivia</option>
-        	<option value="Puerto Montt">Puerto Montt</option>
-        	<option value="Coyhaique">Coyhaique</option>
-        	<option value="Punta Arenas">Punta Arenas</option>
-      	</select>
-			</div>
-			<div class="form-group input-box">
-      	<label for="destino">DESTINO</label>
-      	<select class="form-control" id="destino">
-        	<option value="">Seleccione</option>
-        	<option value="Arica">Arica</option>
-        	<option value="Iquique">Iquique</option>
-        	<option value="Antofagasta">Antofagasta</option>
-        	<option value="Calama"">Calama</option>
-        	<option value="La Serena">La Serena</option>
-        	<option value="Valparaiso">Valparaiso</option>
-        	<option value="Santiago">Santiago</option>
-        	<option value="Rancagua">Rancagua</option>
-        	<option value="Talca">Talca</option>
-        	<option value="Concepción">Concepción</option>
-        	<option value="Temuco">Temuco</option>
-        	<option value="Valdivia">Valdivia</option>
-        	<option value="Puerto Montt">Puerto Montt</option>
-        	<option value="Coyhaique">Coyhaique</option>
-        	<option value="Punta Arenas">Punta Arenas</option>
-      	</select>
-			</div>
-	</div><!-- fin origen del destino-->
+  <div class="row">
+    <div class="col-xs-8 col-md-4" id="ruta">
+      <div class="form-group input-box">
+        <label for="origen">ORIGEN</label>
+        <select class="form-control" id="origen">
+          <option value="">Seleccione</option>
+          <option value="Arica">Arica</option>
+          <option value="Iquique">Iquique</option>
+          <option value="Antofagasta">Antofagasta</option>
+          <option value="Calama">Calama</option>
+          <option value="La Serena">La Serena</option>
+          <option value="Valparaiso">Valparaiso</option>
+          <option value="Santiago">Santiago</option>
+          <option value="Rancagua"> Rancagua</option>
+          <option value="Talca">Talca</option>
+          <option value="Concepción">Concepción</option>
+          <option value="Temuco">Temuco</option>
+          <option value="Valdivia">Valdivia</option>
+          <option value="Puerto Montt">Puerto Montt</option>
+          <option value="Coyhaique">Coyhaique</option>
+          <option value="Punta Arenas">Punta Arenas</option>
+        </select>
+      </div>
+      <div class="form-group input-box">
+        <label for="destino">DESTINO</label>
+        <select class="form-control" id="destino">
+          <option value="">Seleccione</option>
+          <option value="Arica">Arica</option>
+          <option value="Iquique">Iquique</option>
+          <option value="Antofagasta">Antofagasta</option>
+          <option value="Calama"">Calama</option>
+          <option value="La Serena">La Serena</option>
+          <option value="Valparaiso">Valparaiso</option>
+          <option value="Santiago">Santiago</option>
+          <option value="Rancagua">Rancagua</option>
+          <option value="Talca">Talca</option>
+          <option value="Concepción">Concepción</option>
+          <option value="Temuco">Temuco</option>
+          <option value="Valdivia">Valdivia</option>
+          <option value="Puerto Montt">Puerto Montt</option>
+          <option value="Coyhaique">Coyhaique</option>
+          <option value="Punta Arenas">Punta Arenas</option>
+        </select>
+      </div>
+  </div>
 </div>
 <div class="row">
-	<div class="col-xs-8 col-md-4">
-		<button type="button" class="btn btn-warning btn-lg btn-block" id="search">buscar</button>
-	</div>
+  <div class="col-xs-8 col-md-4">
+    <button type="button" class="btn btn-warning btn-lg btn-block" id="search">buscar</button>
+  </div>
 </div>
 <div class="row">
-	<div class="col-xs-8 col-md-4 hidden" id="carro">
-		<h4>VEHÍCULO</h4>
-		<h6>seleccione</h6>
-		<div class="radio">
-  			<label><input type="radio" name="vehicle" value="moto"></label>
-  			<img src="docs/moto.jpg" class="img-responsive auto" alt="">
-  			<h4>Moto</h4>
+  <div class="col-xs-8 col-md-4 hidden" id="carro">
+    <h4>VEHÍCULO</h4>
+    <h6>seleccione</h6>
+    <div class="radio">
+        <label><input type="radio" name="vehicle" value="moto"></label>
+        <img src="docs/moto.jpg" class="img-responsive auto" alt="">
+        <h4>Moto</h4>
         <div class="precioMoto"></div>
-  			<span class="llenar">máximo 2 pasajeros</span>
-		</div>
-		<div class="radio">
-  		<label><input type="radio" name="vehicle" value="auto"></label>
-  			<img src="docs/auto.jpg" alt="" class="img-responsive auto">
-  			<h4>Automóvil</h4>
+        <span class="llenar">máximo 2 pasajeros</span>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="vehicle" value="auto"></label>
+        <img src="docs/auto.jpg" alt="" class="img-responsive auto">
+        <h4>Automóvil</h4>
         <div class="precioAuto"></div>
-  			<span class="llenar">máximo 5 pasajeros</span>
-		</div>
-		<div class="radio">
-  		<label><input type="radio" name="vehicle" value="minivan"></label>
-  			<img src="docs/van.jpg" alt="" class="img-responsive auto">
-  			<h4>Minivan</h4>
+        <span class="llenar">máximo 5 pasajeros</span>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="vehicle" value="minivan"></label>
+        <img src="docs/van.jpg" alt="" class="img-responsive auto">
+        <h4>Minivan</h4>
         <div class="precioVan"></div>
-  			<span class="llenar">máximo 10 pasajeros</span>
-		</div>
-		<div class="radio">
-  		<label><input type="radio" name="vehicle" value="camion"></label>
-  			<img src="docs/camion.jpg" alt="" class="img-responsive auto">
-  			<h4>Camión</h4>
-  			<div class="precioCamion"></div>
+        <span class="llenar">máximo 10 pasajeros</span>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="vehicle" value="camion"></label>
+        <img src="docs/camion.jpg" alt="" class="img-responsive auto">
+        <h4>Camión</h4>
+        <div class="precioCamion"></div>
         <span class="llenar">máximo 3 pasajeros</span> 
-		</div>
-			<h4 class="cantidad ">Cantidad de pasajeros</h4>
-			<label><input type="number" value="1" min="1" class="psj" id="psj"></label>
+    </div>
+      <h4 class="cantidad ">Cantidad de pasajeros</h4>
+      <label><input type="number" value="1" min="1" class="psj" id="psj"></label>
       <span id="txt"></span>
-	</div>
-</div>	
+  </div>
+</div>  
 <div class="row">
-	<div class="col-xs-8 col-md-4">
-		<button type="button" class="btn btn-warning btn-lg btn-block hidden"  data-toggle="modal" data-target="#modal" id="search2">compartir carro!</button>
-	</div>
+  <div class="col-xs-8 col-md-4">
+    <button type="button" class="btn btn-warning btn-lg btn-block hidden"  data-toggle="modal" data-target="#modal" id="search2">compartir carro!</button>
+  </div>
 </div>
-
-</div><!--fin container con zindex-->
+</div>
 
 <!---->
 <div id="modal" class="modal fade hidden" tabindex="1" role="dialog">

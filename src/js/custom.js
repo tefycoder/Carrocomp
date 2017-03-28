@@ -7,9 +7,9 @@ $(document).ready(function(){
     center: new google.maps.LatLng(-33.437411, -70.650146),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   		}
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-// Valida origen y destino 
+//validacion de origen
 function validarSelect(input){
 	var mensaje = "";
 	var bool = true;
@@ -21,7 +21,34 @@ function validarSelect(input){
 		mostrarMsj1(mensaje,input);
 		return bool
 };
-//ruta del mapa 
+// mensaje
+function mostrarMsj1(mensaje, input){
+	if(mensaje == ""){
+		return;
+	}
+	var span_ruta = $("<span>" + mensaje + "</span>");
+	$('select').parent().append(span_ruta);
+}
+
+
+$("#search2").on("click",function(e){
+	if(validarVehiculo() == true){
+		$("#modal").toggle;
+	}else{
+		alert("Complete los datos");
+		}
+
+});
+//boton busqueda 
+$("#search").on("click",function(e){
+	e.preventDefault()
+	if(validarSelect() == true){
+		$("#carro").removeClass("hidden");
+		$("#search2").removeClass("hidden");
+	var directionsDisplay = new google.maps.DirectionsRenderer();
+	var directionsService = new google.maps.DirectionsService();
+		console.log(google.maps)
+//ruta mapa
 var request = {
  origin: $('#origen').val(),
  destination: $('#destino').val(),
@@ -29,6 +56,18 @@ var request = {
  unitSystem: google.maps.DirectionsUnitSystem.METRIC,
  provideRouteAlternatives: true
  };
+directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+        directionsDisplay.setMap(map);
+        //directionsDisplay.setPanel($("#panel_ruta").get(0));
+        directionsDisplay.setDirections(response);
+        console.log(response.routes[0].legs[0].distance.text)
+
+
+
+
+
+
 
 
 

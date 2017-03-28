@@ -23,5 +23,7 @@
 #sel1,#sel2,
 .psj{border:1px solid #FFC36C}
 .radio{margin-bottom:-5px}
-.radio span{display:block;left:80px;top:-18px}.cantidad,.psj{display:inline-block}.auto{width:50px;height:50px}.cantidad{padding:5px}.psj{width:40px}.input-box span{display:block;background-color:rgba(234, 186, 20, 0.8);padding:5px;position:absolute;left:105%;top:25px;width:300px;color:#fff}.input-box span:after{content:"";width:0;height:0;border-top:5px solid transparent;border-right:10px solid rgba(51,51,51,.8);border-bottom:5px solid transparent;position:absolute;right:100%;top:10px}.precioAuto,.precioCamion,.precioMoto,.precioVan{font-size:18px;font-weight:700;color:#FFC36C;display:inline-block;margin-left:68px}.precioAuto{margin-left:20px}.precioCamion,
+.radio span{display:block;left:80px;top:-18px}.cantidad,.psj{display:inline-block}.auto{width:50px;height:50px}.cantidad{padding:5px}.psj{width:40px}.input-box span{display:block;background-color:rgba(234, 186, 20, 0.8);padding:5px;position:absolute;left:105%;top:25px;width:300px;color:#fff}
+.input-box span:after{content:"";width:0;height:0;border-top:5px solid transparent;border-right:10px solid rgba(51,51,51,.8);border-bottom:5px solid transparent;position:absolute;right:100%;top:10px}
+.precioAuto,.precioCamion,.precioMoto,.precioVan{font-size:18px;font-weight:700;color:#333;display:inline-block;margin-left:68px}.precioAuto{margin-left:20px}.precioCamion,
 .precioVan{margin-left:40px}

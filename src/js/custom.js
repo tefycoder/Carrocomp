@@ -84,9 +84,73 @@ directionsService.route(request, function(response, status) {
 });
 
 });
+// mensaje
+function mostrarMsj(mensaje, input){
+	if(mensaje == ""){
+		return;
+	}
+	var span_mensaje = $("<span>" + mensaje + "</span>");
+	$('.radio').parent().append(span_mensaje);
+}
 
+//radio
+function validarVehiculo(input){
+	var mensaje = "";
+	var bool = true;
+	if($("input[name='vehicle']:radio").is(":checked")){
+	   		return true
+	   		console.log("OK")
+	}else{
+		mensaje += "Selecciona un Vehiculo" 
+			bool = false
+		};
+	$(".radio").siblings().filter("span").remove();// NO FUNCIONA
+		mostrarMsj(mensaje, input);
+		return bool
+	};
 
+function validarPasajeros(input){
+	var mensaje = "";
+	var bool = true;
+	if($(".psj").val() == ""){
+		mensaje += "Campo Obligatorio "
+		bool = false
+	}else{
+		if($(".psj").val().length >10){
+			mensaje += "Máximo 10 pasajeros"
+			bool = false
+		}
+	}
+	$("#text").siblings().filter("span").remove();// NO FUNCIONA
+		mostrarMsj(mensaje, input);
+		return bool
+};
 
+// costo
+//function calcula_precio() {
+ //  if(document.getElementById("opciones").selectedIndex){
+   //   seleccion = document.getElementById("opciones").value;
+   //   }
+  // for(var i=0; i<document.formu.estado.length;i++){
+   //     if(document.formu.estado[i].checked){
+    //      seleccionado = document.formu.estado[i].value;
+    //       }
+    //      }
+
+ // var unidades = document.getElementById(".radio").value;
+ // if(unidades > 0){
+  //  var unidades
+  //  }
+
+  //  if(document.getElementById("").checked){
+   //  var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(unidades);
+    // var precioConImpuestos = (1 + parseInt(impuesto)/100) * precio;
+    // document.getElementById(".radio").value = precioConImpuestos.toFixed(2);}
+   // else{ var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(unidades);
+   //       document.getElementById(".radio").value = precio.toFixed(2); }
+//}
+//
+     
 
 
 

@@ -136,29 +136,29 @@ function validarPasajeros(input){
 		return bool
 };
 
-// costo
-//function calcula_precio() {
- //  if(document.getElementById("opciones").selectedIndex){
-   //   seleccion = document.getElementById("opciones").value;
-   //   }
-  // for(var i=0; i<document.formu.estado.length;i++){
-   //     if(document.formu.estado[i].checked){
-    //      seleccionado = document.formu.estado[i].value;
-    //       }
-    //      }
+// precio
+   function calcula_precio() {
+   	var precio= "673​"
+  if(document.getElementById("opciones").selectedIndex){
+    seleccion = document.getElementById("opciones").value;
+    }
+  for(var i=0; i<document.formu.estado.length;i++){
+      if(document.formu.estado[i].checked){
+         seleccionado = document.formu.estado[i].value;
+          }
+          }
+      var unidades = document.getElementById(".radio").value;
+    if(unidades > 0){
+      var unidades
+    }
 
- // var unidades = document.getElementById(".radio").value;
- // if(unidades > 0){
-  //  var unidades
-  //  }
-
-  //  if(document.getElementById("").checked){
-   //  var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(unidades);
-    // var precioConImpuestos = (1 + parseInt(impuesto)/100) * precio;
-    // document.getElementById(".radio").value = precioConImpuestos.toFixed(2);}
-   // else{ var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(unidades);
-   //       document.getElementById(".radio").value = precio.toFixed(2); }
-//}
+    if(document.getElementById("").checked){
+     var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(validarVehiculo);
+     var precioMoto = (1 + parseInt(valor)/100) * precio;
+     document.getElementById(".radio").value = precio.toFixed(2);}
+    else{ var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(unidades);
+          document.getElementById(".radio").value = precio.toFixed(2); }
+}
 
      
 

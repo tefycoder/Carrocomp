@@ -30,14 +30,25 @@ function mostrarMsj1(mensaje, input){
 	$('select').parent().append(span_ruta);
 }
 
-
 $("#search2").on("click",function(e){
 	if(validarVehiculo() == true){
 		$("#modal").toggle;
 	}else{
 		alert("Complete los datos");
 		}
-
+ //  var precioTOTAL=0;		 
+   //var precioTOTAL=0;
+  // var dis1= localStorage.getItem("origen");		 
+  // var dis1= localStorage.getItem("origen");
+  // var dis2= localStorage.getItem("destino");		  var dis2= localStorage.getItem("destino");
+  // var distanciaTOTAL=parseInt(dis1)-parseInt(dis2);		 +var distanciaTOTAL=parseInt(dis1)+parseInt(dis2);
+  //  if (distanciaTOTAL<0){		
+  //     distanciaTOTAL= distanciaTOTAL*-1;		
+   // }		
+   //else		
+   //{		
+    //  distanciaTOTAL= distanciaTOTAL;		
+  // }
 });
 //boton busqueda 
 $("#search").on("click",function(e){
@@ -49,7 +60,7 @@ $("#search").on("click",function(e){
 	var directionsService = new google.maps.DirectionsService();
 		console.log(google.maps)
 //ruta mapa
-var request = {
+  var request = {
  origin: $('#origen').val(),
  destination: $('#destino').val(),
  travelMode: google.maps.DirectionsTravelMode.DRIVING,
@@ -64,8 +75,7 @@ directionsService.route(request, function(response, status) {
         console.log(response.routes[0].legs[0].distance.text)
 //valor del viaje
         var km = response.routes[0].legs[0].distance.text;
-        var valor = parseInt(km.substring(0, km.indexOf(' ')));
-        
+        var valor = parseInt(km.substring(0, km.indexOf(' ')));   
         	console.log(km, valor)
         $('.precioMoto').html('')
         $('.precioMoto').html(parseInt(valor/21*673))
@@ -149,7 +159,7 @@ function validarPasajeros(input){
    // else{ var precio = (parseInt(seleccion) + parseInt(seleccionado)) * parseInt(unidades);
    //       document.getElementById(".radio").value = precio.toFixed(2); }
 //}
-//
+
      
 
 
